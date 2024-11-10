@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Career Guidance Portal</h1>
+        <p>Find the path that’s right for you</p>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li><a href="#highschool" class="tab-link active">High School</a></li>
+            <li><a href="#intermediate" class="tab-link">Intermediate</a></li>
+            <li><a href="#graduation" class="tab-link">Graduation</a></li>
+            <li><a href="#postgraduation" class="tab-link">Post Graduation</a></li>
+        </ul>
+    </nav>
+
+    <section class="tab-content">
+        <div id="highschool" class="content active">
+            <h2>High School Options</h2>
+            <div class="buttons">
+                <button onclick="showSyllabus('highschool', 'ssc')">SSC</button>
+                <button onclick="showSyllabus('highschool', 'cbse')">CBSE</button>
+                <button onclick="showSyllabus('highschool', 'icse')">ICSE</button>
+                <button onclick="showSyllabus('highschool', 'state')">State Board</button>
+            </div>
+            <div id="highschool-syllabus" class="syllabus"></div>
+        </div>
+
+        <div id="intermediate" class="content">
+            <h2>Intermediate Options</h2>
+            <div class="buttons">
+                <button onclick="showSyllabus('intermediate', 'mpc')">MPC</button>
+                <button onclick="showSyllabus('intermediate', 'bipc')">BIPC</button>
+                <button onclick="showSyllabus('intermediate', 'hec')">HEC</button>
+                <button onclick="showSyllabus('intermediate', 'cec')">CEC</button>
+                <button onclick="showSyllabus('intermediate', 'arts')">Arts</button>
+                <button onclick="showSyllabus('intermediate', 'mlt')">MLT</button>
+                <button onclick="showSyllabus('intermediate', 'commerce')">Commerce</button>
+            </div>
+            <div id="intermediate-syllabus" class="syllabus"></div>
+        </div>
+
+        <div id="graduation" class="content">
+            <h2>Graduation Options</h2>
+            <div class="buttons">
+                <button onclick="showSyllabus('graduation', 'diploma')">Diploma</button>
+                <button onclick="showSyllabus('graduation', 'degree')">Degree</button>
+                <button onclick="showSyllabus('graduation', 'btech')">B.Tech</button>
+                <button onclick="showSyllabus('graduation', 'bsc')">B.Sc</button>
+                <button onclick="showSyllabus('graduation', 'bba')">BBA</button>
+                <button onclick="showSyllabus('graduation', 'ba')">BA</button>
+            </div>
+            <div id="graduation-syllabus" class="syllabus"></div>
+        </div>
+
+        <div id="postgraduation" class="content">
+            <h2>Post Graduation Options</h2>
+            <div class="buttons">
+                <button onclick="showSyllabus('postgraduation', 'mtech')">M.Tech</button>
+                <button onclick="showSyllabus('postgraduation', 'mba')">MBA</button>
+                <button onclick="showSyllabus('postgraduation', 'msc')">M.Sc</button>
+                <button onclick="showSyllabus('postgraduation', 'ma')">M.A.</button>
+                <button onclick="showSyllabus('postgraduation', 'mcom')">M.Com</button>
+            </div>
+            <div id="postgraduation-syllabus" class="syllabus"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
